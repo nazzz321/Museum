@@ -4,13 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarSize="50dp"
     tools:context=".Introduction">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="324dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesansprolight"
+                android:text="Жил некто по имени Ли Лин конец 1 века начало 2 до н.э. Ли Лин отправился сюда, чтобы завоевать эти территории. Гунны взяли его в плен.  Обратить внимание на черепицу. В 1944 году неподалёку от раскопок строили дорогу, и часть захоронения разрушилось. Обонянием наделены обитатели среднего мира — люди. животные и растения. Рот для мира умерших, для пожирателей душ. Накормить духа, развести огонь, принести подношение, сделать засечку в камне "
+                android:textColor="#E91E63"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesansprolight"
+                android:text="Старт экскурсии"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
