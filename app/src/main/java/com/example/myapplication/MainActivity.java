@@ -14,15 +14,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button DefaultStart = (Button) findViewById(R.id.button3);
-        DefaultStart.setOnClickListener(new View.OnClickListener() {
+        Button MainStart = (Button) findViewById(R.id.MainStart);
+        Button AvailableStart = (Button) findViewById(R.id.AvailableStart);
+        MainStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent switcher = new Intent(MainActivity.this,Introduction.class);
+                Intent switcher = new Intent(MainActivity.this, IntroductionMain.class);
                 MainActivity.this.startActivity(switcher);
             }
         });
-
+       AvailableStart.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent switcher = new Intent(MainActivity.this, IntroductionAvialible.class);
+               MainActivity.this.startActivity(switcher);
+           }
+       });
     }
 
 
