@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button MainStart = (Button) findViewById(R.id.MainStart);
         Button AvailableStart = (Button) findViewById(R.id.AvailableStart);
+        this.setTitle("Museum"); // First Git
         MainStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
